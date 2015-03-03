@@ -17,10 +17,10 @@ using namespace std;
 
 //VARIABLES FOR LEVELING AND TRAINING
 //////////////////////////////////////////////////////////////////////////////
-bool fightingIntro = false;    //To learn how to fight (true = play it)
-bool lvl2Scene = false;         //cut scene at level 2
-bool lvl2Scene2 = false;        //cut scene at level 2 and a half
-bool lvl3Scene = false;          //cut scene at level 3
+bool fightingIntro = true;    //To learn how to fight (true = play it)
+bool lvl2Scene = true;         //cut scene at level 2
+bool lvl2Scene2 = true;        //cut scene at level 2 and a half
+bool lvl3Scene = true;          //cut scene at level 3
 bool playTownScene = true;
 int fullHealth = 25;          //maximum health (attained through sleep)
 int fullWater = 5;             //Max water  (attained by going home)
@@ -2287,7 +2287,7 @@ int main(){
     int health = 25;       //Current Health (also at top, must match)
     int gold = 0;          //Starting gold
     int water = 5;         //Starting water capacity (also at top, must match))
-    int level = 3;         //Starting level
+    int level = 1;         //Starting level
     string task;            //Action inputted by the user (1,2,3,4...etc)
     int percentExp = 0;
     
@@ -2301,49 +2301,49 @@ int main(){
     getline (cin, name);
     Guy guy(name, ironSword, health, gold, water, level);
     Sleep(2000);
-//
-//     cout << "\nIt's dark...\n";
-//    Sleep(1500);
-//    cout << "\nYou stumble over something that you cannot see at your feet\n";
-//    Sleep(3000);
-//    cout << "\nWhere are you?\n";
-//    Sleep(2000);
-//    cout << "\nWhy does it feel as if you've been here before?\n";
-//    Sleep(3500);
-//    cout << "\nA voice calls from the distance...\n";
-//    Sleep(1500);
-//    cout << "\n\"" + guy.name + "\"\n";
-//    Sleep(2000);
-//    cout << "\nIt's a girl...\n";
-//    Sleep(1500);
-//    cout << "\n\"" + guy.name + "!\"\n";
-//    Sleep(1500);
-//    cout << "\nSo familiar...\n";
-//    Sleep(1500);
-//    cout << "\n\"" + uppercase(guy.name) + "\"\n";
-//    Sleep(1500);
-//    cout << "\nYou pick up your pace...\n";
-//    Sleep(1500);
-//    cout << "\n\"" + uppercase(guy.name) + "!\"\n";
-//    Sleep(1500);
-//    cout << "\nIt's too dark to see where she is...\n";
-//    Sleep(2000);
-//    cout << "\n\"" + uppercase(guy.name) + "!..." + 
-//            uppercase(guy.name) + "!..." +
-//            uppercase(guy.name) + "!\"\n";
-//    Sleep(2500);
-//    cout << "\nYou snap awake\n";
-//    Sleep(1500);
-//    cout << "\nIt was that dream again\n";
-//    Sleep(2000);
-//    cout << "\nIt's times like this you wish you didn't live in the woods\n";
-//    Sleep(3000);
-//    cout << "\nYou push it out of your mind as you get ready\n";
-//    Sleep(2000);
-//    cout << "\nNo time to lose, gotta start the day!\n\n\n\n\n";
-//    Sleep(2500);
-//  
-// 
+
+    cout << "\nIt's dark...\n";
+   Sleep(1500);
+   cout << "\nYou stumble over something that you cannot see at your feet\n";
+   Sleep(3000);
+   cout << "\nWhere are you?\n";
+   Sleep(2000);
+   cout << "\nWhy does it feel as if you've been here before?\n";
+   Sleep(3500);
+   cout << "\nA voice calls from the distance...\n";
+   Sleep(1500);
+   cout << "\n\"" + guy.name + "\"\n";
+   Sleep(2000);
+   cout << "\nIt's a girl...\n";
+   Sleep(1500);
+   cout << "\n\"" + guy.name + "!\"\n";
+   Sleep(1500);
+   cout << "\nSo familiar...\n";
+   Sleep(1500);
+   cout << "\n\"" + uppercase(guy.name) + "\"\n";
+   Sleep(1500);
+   cout << "\nYou pick up your pace...\n";
+   Sleep(1500);
+   cout << "\n\"" + uppercase(guy.name) + "!\"\n";
+   Sleep(1500);
+   cout << "\nIt's too dark to see where she is...\n";
+   Sleep(2000);
+   cout << "\n\"" + uppercase(guy.name) + "!..." + 
+           uppercase(guy.name) + "!..." +
+           uppercase(guy.name) + "!\"\n";
+   Sleep(2500);
+   cout << "\nYou snap awake\n";
+   Sleep(1500);
+   cout << "\nIt was that dream again\n";
+   Sleep(2000);
+   cout << "\nIt's times like this you wish you didn't live in the woods\n";
+   Sleep(3000);
+   cout << "\nYou push it out of your mind as you get ready\n";
+   Sleep(2000);
+   cout << "\nNo time to lose, gotta start the day!\n\n\n\n\n";
+   Sleep(2500);
+ 
+
 
 
 //MAIN MENU   
